@@ -5,13 +5,18 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>
 );
+// render(
+//   ,
+//   document.getElementById('root')
+// );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
